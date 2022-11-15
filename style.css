@@ -31,3 +31,16 @@ svg {
   margin-left: 4px;
   text-decoration: underline !important;
 }
+
+nav {
+  background-color: #ffee66;
+}
+
+.nav__container {
+  border: 1px solid black;
+  margin: auto;
+  height: 100px;
+  width: 1024px;
+}
+.icon_loupe {
+}
