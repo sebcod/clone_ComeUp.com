@@ -7,6 +7,8 @@
   font-family: Montserrat, sans-serif;
 }
 
+/****** header *******/
+
 header {
   background-color: black;
   height: 62px;
@@ -32,15 +34,42 @@ svg {
   text-decoration: underline !important;
 }
 
+/*****  nav bar ********/
+
 nav {
   background-color: #ffee66;
 }
 
 .nav__container {
-  border: 1px solid black;
   margin: auto;
   height: 100px;
   width: 1024px;
 }
-.icon_loupe {
+
+.nav__container__form {
+  height: 40px;
+  width: 340px;
+  display: flex;
+}
+
+.nav__container__form__input {
+  width: 300px;
+  padding: 6px;
+  border: none;
+  outline: none;
+  background-color: #f3f3f3;
+}
+
+.nav__container__form__button {
+  background-color: #000;
+  border: none;
+  width: 40px;
+}
+
+.nav__container__form__button:hover {
+  cursor: pointer;
+}
+
+.nav__container__form__button__loupe {
+  height: 16px;
 }
