@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
 * {
   padding: 0;
@@ -7,6 +9,11 @@
   font-family: Montserrat, sans-serif;
   list-style-type: none;
   text-decoration: none;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: #000;
 }
 
 /****** header *******/
@@ -15,7 +22,6 @@ header {
   background-color: black;
   height: 62px;
   font-size: 18px;
-  font-weight: 600;
 }
 header a {
   display: flex;
@@ -23,12 +29,11 @@ header a {
   align-items: center;
   width: 100%;
   height: 100%;
-
   color: white;
 }
 
 svg {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .underline {
@@ -45,7 +50,7 @@ nav {
 .nav__container {
   margin: 0 auto;
   height: 100px;
-  width: 1024px;
+  max-width: 960px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,6 +62,11 @@ nav {
   width: 340px;
   display: flex;
 }
+
+.nav__container__logo_comeup__mini {
+  display: none;
+}
+
 .nav__container__logo_comeup {
   width: 98px;
   height: 27px;
@@ -103,13 +113,14 @@ nav {
   position: absolute;
   top: 50px;
   left: -55px;
-  padding: 5px;
+  padding: 0px 10px;
   width: max-content;
   background-color: #ffffff;
   text-transform: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 30px;
+  z-index: 2;
 }
 
 .nav__container__menu__list__containerFlecheTop {
@@ -158,17 +169,235 @@ nav {
   text-transform: uppercase;
 }
 
+.nav__container__connexion {
+  text-transform: uppercase;
+  color: #000;
+}
+
 .nav__container__devenez_vendeur {
   text-transform: uppercase;
   background-color: black;
+  display: flex;
+  align-items: center;
   color: #fff;
-  padding: 10px;
+  height: 40px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__container__devenez_vendeur,
+  .nav__container__connexion {
+    display: none;
+  }
+
+  .nav__container__logo_comeup {
+    align-items: center;
+  }
+
+  .nav__container {
+    width: 100%;
+    height: 62px;
+    display: block;
+    position: relative;
+  }
+
+  .nav__container__logo_comeup {
+    display: none;
+  }
+  .nav__container__logo_comeup__mini {
+    display: block;
+    width: 32px;
+    height: 27px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav__container__form__input {
+    display: none;
+  }
+
+  .nav__container__form {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav__container__menu {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .nav__container__menu__containerMiniMenu {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__container__menu__containerMiniMenu__miniMenu {
+    height: 3px;
+    width: 18px;
+    margin: 1.5px;
+    background-color: black;
+  }
+  .nav__container__menu__imgMenu {
+    display: none;
+  }
+  .nav__container__menu__categories {
+    display: none;
+  }
+
+  .nav__container__form__button {
+    background-color: transparent;
+  }
+  .nav__container__form__button__loupe {
+    fill: black;
+  }
 }
 
 /****** section trouver *****/
 
 .trouver {
-  width: 100%;
-  height: 900px;
+  height: 870px;
   background-color: #ffee66;
+}
+
+.trouver__container {
+  position: relative;
+  max-width: 960px;
+  /* height: 722px; */
+  margin: auto;
+  padding: 35px 0 113px 0;
+  /* border: solid; */
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 50px;
+  font-weight: 500;
+  padding-top: 4px;
+  margin-bottom: 30px;
+}
+
+h1 strong {
+  font-weight: 700;
+}
+
+.trouver__container form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 50px;
+  max-width: 535px;
+  margin-top: 63px;
+}
+
+.trouver__container form input {
+  padding: 0 18px;
+  border: none;
+  background-color: #fff;
+  color: black;
+  font-size: 18px;
+  font-weight: inherit;
+  width: 100%;
+  outline: none;
+}
+
+.trouver__container button {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+}
+
+.trouver__container__recommande {
+  margin-top: 80px;
+  /* border: solid; */
+  position: relative;
+  z-index: 1;
+}
+
+.trouver__container__recommande h2 {
+  position: absolute;
+  left: -84px;
+  top: 121px;
+  transform: rotate(-90deg);
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.homepage-intro-illustration {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  z-index: 0;
+}
+
+.trouver__container__recommande__carousel {
+  width: 300px;
+  margin-left: 117px;
+  height: 357px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.serviceBottom {
+  padding: 15px;
+}
+.serviceBottom a {
+  height: 37px;
+}
+
+.serviceAuthor {
+  display: flex;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.sA-name {
+  display: flex;
+  font-size: 13px;
+  line-height: 0.933;
+  margin: 0 0 6px 0;
+}
+
+.serviceAuthor img {
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.authorStartcomments {
+}
+.authorStartcomments .svgContainer {
+}
+.containerStartComments {
+  display: flex;
+}
+.mainBlock_service .btn {
+  font-size: 13px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: rgb(222, 222, 222);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
 }
