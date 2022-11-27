@@ -266,47 +266,9 @@
                 <li class="carousel-item">
                   <div class="mainBlock_service">
                     <div class="serviceIllu">
-                      <picture
-                        ><source
-                          srcset="
-                            https://thumbor.comeup.com/unsafe/300x169/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 1x,
-                            https://thumbor.comeup.com/unsafe/600x338/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 2x
-                          "
-                          media="(min-width: 992px)" />
-                        <source
-                          srcset="
-                            https://thumbor.comeup.com/unsafe/276x155/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 1x,
-                            https://thumbor.comeup.com/unsafe/filters:no_upscale()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png                     2x
-                          "
-                          media="(min-width: 768px) and (max-width: 991px)" />
-                        <source
-                          srcset="
-                            https://thumbor.comeup.com/unsafe/368x207/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 1x,
-                            https://thumbor.comeup.com/unsafe/722x406/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 2x
-                          "
-                          media="(min-width: 415px) and (max-width: 767px)" />
-                        <source
-                          srcset="
-                            https://thumbor.comeup.com/unsafe/276x155/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 1x,
-                            https://thumbor.comeup.com/unsafe/368x207/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 2x
-                          "
-                          media="(min-width: 376px) and (max-width: 414px)" />
-                        <source
-                          srcset="
-                            https://thumbor.comeup.com/unsafe/276x155/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 1x,
-                            https://thumbor.comeup.com/unsafe/330x186/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 2x
-                          "
-                          media="(min-width: 321px) and (max-width: 375px)" />
-                        <source
-                          srcset="
-                            https://thumbor.comeup.com/unsafe/276x155/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 1x,
-                            https://thumbor.comeup.com/unsafe/276x155/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png 2x
-                          "
-                          media="(max-width: 320px)" />
+                      <picture>
                         <img
                           src="https://thumbor.comeup.com/unsafe/300x169/filters:quality(90):strip_exif()/uploads/media/picture/2022-09-29/swello-6335258c00df4.png"
-                          width="300"
-                          height="169"
                           alt=""
                       /></picture>
                     </div>
@@ -320,6 +282,7 @@
                       </a>
                       <div class="serviceAuthor">
                         <img
+                          class="imgAuthor"
                           src="https://thumbor.comeup.com/unsafe/84x84/filters:quality(90):no_upscale()/user/0cf75e9b-01c0-4a5d-a02e-a2dfe0aab4f8.png"
                           alt=""
                         />
@@ -327,33 +290,55 @@
                           <div class="sA-name">
                             <span class="colorGrey350">par</span>&nbsp;
                             <em class="sA-name__nd"> Misterplusdesign </em
-                            ><span
-                              class="svgContainer"
-                              aria-hidden="true"
-                              focusable="false"
-                            >
-                              v</span
-                            >
+                            ><span class="svgContainer">
+                              <img
+                                class="imgcheckmark-circle"
+                                src="./img/carousel/checkmark-circle.svg"
+                                alt=""
+                            /></span>
                           </div>
                           <div class="containerStartComments">
                             <div class="containerStartComments__stars">
-                              <span class="star">x</span
-                              ><span class="star d-none d-md-inline">x</span
-                              ><span class="star d-none d-md-inline">x</span
-                              ><span class="star d-none d-md-inline">x</span
-                              ><span class="star d-none d-md-inline">x</span>
+                              <span class="star"
+                                ><img
+                                  class="starsvg"
+                                  src="./img/carousel/star-svgrepo-com.svg"
+                                  alt="" /></span
+                              ><span class="star"
+                                ><img
+                                  class="starsvg"
+                                  src="./img/carousel/star-svgrepo-com.svg"
+                                  alt="" /></span
+                              ><span class="star"
+                                ><img
+                                  class="starsvg"
+                                  src="./img/carousel/star-svgrepo-com.svg"
+                                  alt="" /></span
+                              ><span class="star"
+                                ><img
+                                  class="starsvg"
+                                  src="./img/carousel/star-svgrepo-com.svg"
+                                  alt="" /></span
+                              ><span class="star"
+                                ><img
+                                  class="starsvg"
+                                  src="./img/carousel/star-svgrepo-com.svg"
+                                  alt=""
+                              /></span>
                             </div>
-                            <div
-                              class="flex-shrink-0 countComments"
-                              title="83 avis"
-                            >
+                            <div class="countComments" title="83 avis">
                               (83)
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="btn">À partir de 25&nbsp;€</div>
+                      <div class="btn" id="btn">À partir de 25&nbsp;€</div>
                     </div>
+                  </div>
+                  <div class="containerBtnCarousel">
+                    <label for="btn" class="btnCarousel">aaaa</label>
+                    <input type="radio" name="my-input" id="yes" />
+                    <label for="yes">Oui</label>
                   </div>
                 </li>
                 <!-- <li
