@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 
-* {
+*,
+::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -356,7 +357,6 @@ h1 strong {
   margin-left: 117px;
   height: 357px;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
 }
 
 .serviceIllu picture {
@@ -364,6 +364,7 @@ h1 strong {
 }
 
 .serviceBottom {
+  background-color: #fff;
   padding: 15px;
 }
 .serviceBottom a {
@@ -384,9 +385,17 @@ h1 strong {
 
 .sA-name {
   display: flex;
-  font-size: 13px;
-  line-height: 0.933;
+  font-size: 14px;
+  line-height: 1;
   margin: 0 0 6px 0;
+}
+
+.sA-name__colorGrey {
+  color: gray;
+}
+
+.sA-name__nd {
+  font-style: normal;
 }
 
 .serviceAuthor .imgAuthor {
@@ -429,12 +438,7 @@ h1 strong {
   text-align: center;
 }
 
-.checkbox-container {
-  position: relative;
-  border: solid;
-  width: 100%;
-  height: 20px;
-  top: 20px;
+.carousel {
   z-index: 1;
 }
 
@@ -444,33 +448,39 @@ h1 strong {
 .on-click {
   display: block;
   width: 300px;
-  height: 300px;
-  border: solid;
+  height: 357px;
 }
-
 input[type="radio"] {
-  appearance: none;
+  display: none;
+}
+input[type="radio"] + label {
+  z-index: 0;
 }
 input[type="radio"] + label::after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  left: 20px;
-  bottom: -20px;
-  width: 10px;
-  height: 10px;
+  left: 80px;
+  bottom: -40px;
+  width: 8px;
+  height: 8px;
   background: white;
-  border: 1px solid;
 }
 input[type="radio"]:checked + label::after {
-  background: rgba(0, 0, 0, 0.25);
-}
-input[type="radio"] + .btn-radio-2::after {
-  left: 40px;
-}
-input[type="radio"]:checked + .btn-radio-2::after {
-  left: 40px;
+  background: rgba(0, 0, 0, 0.5);
 }
 input[type="radio"]:checked + .on-click {
-  /* background-color: blue; */
+  z-index: 1;
+}
+input[type="radio"] + .btn-radio-2::after {
+  left: 100px;
+}
+input[type="radio"]:checked + .btn-radio-2::after {
+  left: 100px;
+}
+input[type="radio"] + .btn-radio-3::after {
+  left: 120px;
+}
+input[type="radio"]:checked + .btn-radio-3::after {
+  left: 120px;
 }
