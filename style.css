@@ -484,3 +484,9 @@ input[type="radio"] + .btn-radio-3::after {
 input[type="radio"]:checked + .btn-radio-3::after {
   left: 120px;
 }
+input[type="radio"] + .btn-radio-4::after {
+  left: 140px;
+}
+input[type="radio"]:checked + .btn-radio-4::after {
+  left: 140px;
+}
