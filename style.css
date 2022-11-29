@@ -371,8 +371,8 @@ h1 strong {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4838;
-  overflow: hidden;
-  word-break: break-word;
+  /* overflow: hidden;
+  word-break: break-word; */
   color: inherit;
 }
 
@@ -460,8 +460,8 @@ input[type="radio"] + label::after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  left: 80px;
-  bottom: -40px;
+  left: 105px;
+  bottom: -32px;
   width: 8px;
   height: 8px;
   background: white;
@@ -473,20 +473,18 @@ input[type="radio"]:checked + .on-click {
   z-index: 1;
 }
 input[type="radio"] + .btn-radio-2::after {
-  left: 100px;
+  left: 120px;
 }
-input[type="radio"]:checked + .btn-radio-2::after {
-  left: 100px;
-}
+
 input[type="radio"] + .btn-radio-3::after {
-  left: 120px;
-}
-input[type="radio"]:checked + .btn-radio-3::after {
-  left: 120px;
+  left: 135px;
 }
 input[type="radio"] + .btn-radio-4::after {
-  left: 140px;
+  left: 150px;
 }
-input[type="radio"]:checked + .btn-radio-4::after {
-  left: 140px;
+input[type="radio"] + .btn-radio-5::after {
+  left: 165px;
+}
+input[type="radio"] + .btn-radio-6::after {
+  left: 180px;
 }
