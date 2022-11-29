@@ -429,7 +429,7 @@ h1 strong {
   text-align: center;
 }
 
-.containerBtnCarousel {
+.checkbox-container {
   position: relative;
   border: solid;
   width: 100%;
@@ -438,13 +438,39 @@ h1 strong {
   z-index: 1;
 }
 
-.btnCarousel {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  background-color: #fff;
+.label-mini-service {
+  position: absolute;
+}
+.on-click {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border: solid;
 }
 
-yes:checked {
-  background-color: #000;
+input[type="radio"] {
+  appearance: none;
+}
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: 20px;
+  bottom: -20px;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border: 1px solid;
+}
+input[type="radio"]:checked + label::after {
+  background: rgba(0, 0, 0, 0.25);
+}
+input[type="radio"] + .btn-radio-2::after {
+  left: 40px;
+}
+input[type="radio"]:checked + .btn-radio-2::after {
+  left: 40px;
+}
+input[type="radio"]:checked + .on-click {
+  /* background-color: blue; */
 }
