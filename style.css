@@ -11,10 +11,16 @@
   list-style-type: none;
   text-decoration: none;
   font-weight: 600;
+  user-select: none;
 }
 
 ::placeholder {
   color: #000;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
 }
 
 /****** header *******/
@@ -283,6 +289,7 @@ nav {
 h1 {
   position: relative;
   z-index: 1;
+  line-height: 1.12;
   font-size: 50px;
   font-weight: 500;
   padding-top: 4px;
@@ -367,7 +374,7 @@ h1 strong {
   background-color: #fff;
   padding: 15px;
 }
-.serviceBottom a {
+.serviceBottom .serviceTitle {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4838;
@@ -410,8 +417,7 @@ h1 strong {
   width: 15px;
   margin-left: 5px;
 }
-.authorStartcomments .svgContainer {
-}
+
 .containerStartComments {
   display: flex;
 }
@@ -460,7 +466,7 @@ input[type="radio"] + label::after {
   content: "";
   position: absolute;
   border-radius: 50%;
-  left: 105px;
+  left: 102px;
   bottom: -32px;
   width: 8px;
   height: 8px;
@@ -477,14 +483,14 @@ input[type="radio"] + .btn-radio-2::after {
 }
 
 input[type="radio"] + .btn-radio-3::after {
-  left: 135px;
+  left: 138px;
 }
 input[type="radio"] + .btn-radio-4::after {
-  left: 150px;
+  left: 156px;
 }
 input[type="radio"] + .btn-radio-5::after {
-  left: 165px;
+  left: 174px;
 }
 input[type="radio"] + .btn-radio-6::after {
-  left: 180px;
+  left: 192px;
 }
