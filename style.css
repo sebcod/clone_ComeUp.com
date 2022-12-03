@@ -472,11 +472,12 @@ input[type="radio"] + label::after {
   height: 8px;
   background: white;
 }
+
 input[type="radio"]:checked + label::after {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 input[type="radio"]:checked + .on-click {
-  z-index: 1;
+  z-index: 1 !important;
 }
 input[type="radio"] + .btn-radio-2::after {
   left: 120px;
@@ -493,4 +494,87 @@ input[type="radio"] + .btn-radio-5::after {
 }
 input[type="radio"] + .btn-radio-6::after {
   left: 192px;
+}
+
+/*****************     anim xarousel      *******************/
+
+li:hover input[type="radio"] + label::after {
+  background: rgba(0, 0, 0, 0.5) !important;
+  animation-play-state: paused !important;
+  cursor: pointer !important;
+}
+li:hover input[type="radio"] + label {
+  animation-play-state: paused !important;
+}
+
+ul:hover > li:not(:hover) input[type="radio"] + label::after {
+  background: white !important;
+  animation-play-state: paused !important;
+}
+ul:hover > li:not(:hover) input[type="radio"] + label {
+  animation-play-state: paused !important;
+}
+
+@keyframes anim-carousel-checked-radio {
+  0%,
+  16.66% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  16.66%,
+  100% {
+    background: white;
+  }
+}
+@keyframes anim-carousel-z-index-label {
+  0%,
+  16.66% {
+    z-index: 1;
+  }
+  16.66%,
+  100% {
+    z-index: 0;
+  }
+}
+
+li:nth-child(1) input[type="radio"] + label::after {
+  animation: anim-carousel-checked-radio 24s steps(1) infinite;
+}
+li:nth-child(1) input[type="radio"] + label {
+  animation: anim-carousel-z-index-label 24s steps(1) infinite;
+}
+
+@keyframes anim-carousel-checked-radio-ch2 {
+  0%,
+  16.66% {
+    background: white;
+  }
+  16.66%,
+  33.32% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  33.32%,
+  100% {
+    background: white;
+  }
+}
+@keyframes anim-carousel-z-index-label-ch2 {
+  0%,
+  16.66% {
+    z-index: 0;
+  }
+  16.66%,
+  33.32% {
+    z-index: 1;
+  }
+  33.32%,
+  100% {
+    z-index: 0;
+  }
+}
+
+li:nth-child(2) input[type="radio"] + label::after {
+  animation: anim-carousel-checked-radio-ch2 24s steps(1) infinite;
+}
+li:nth-child(2) input[type="radio"] + label {
+  animation: anim-carousel-z-index-label-ch2 24s steps(1) infinite;
 }
