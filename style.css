@@ -473,12 +473,18 @@ input[type="radio"] + label::after {
   background: white;
 }
 
+/*
 input[type="radio"]:checked + label::after {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-input[type="radio"]:checked + .on-click {
+input[type="radio"]:not(:checked) + label::after {
+  background: white !important;
+}
+input[type="radio"]:checked + label {
   z-index: 1 !important;
 }
+*/
+
 input[type="radio"] + .btn-radio-2::after {
   left: 120px;
 }
@@ -499,16 +505,13 @@ input[type="radio"] + .btn-radio-6::after {
 /*****************     anim xarousel      *******************/
 
 li:hover input[type="radio"] + label::after {
-  background: rgba(0, 0, 0, 0.5) !important;
   animation-play-state: paused !important;
   cursor: pointer !important;
 }
 li:hover input[type="radio"] + label {
   animation-play-state: paused !important;
 }
-
 ul:hover > li:not(:hover) input[type="radio"] + label::after {
-  background: white !important;
   animation-play-state: paused !important;
 }
 ul:hover > li:not(:hover) input[type="radio"] + label {
@@ -577,4 +580,220 @@ li:nth-child(2) input[type="radio"] + label::after {
 }
 li:nth-child(2) input[type="radio"] + label {
   animation: anim-carousel-z-index-label-ch2 24s steps(1) infinite;
+}
+
+@keyframes anim-carousel-checked-radio-ch3 {
+  0%,
+  16.66% {
+    background: white;
+  }
+  16.66%,
+  33.32% {
+    background: white;
+  }
+  33.32%,
+  49.98% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  49.98%,
+  100% {
+    background: white;
+  }
+}
+@keyframes anim-carousel-z-index-label-ch3 {
+  0%,
+  16.66% {
+    z-index: 0;
+  }
+  16.66%,
+  33.32% {
+    z-index: 0;
+  }
+  33.32%,
+  49.98% {
+    z-index: 1;
+  }
+  49.98%,
+  100% {
+    z-index: 0;
+  }
+}
+
+li:nth-child(3) input[type="radio"] + label::after {
+  animation: anim-carousel-checked-radio-ch3 24s steps(1) infinite;
+}
+li:nth-child(3) input[type="radio"] + label {
+  animation: anim-carousel-z-index-label-ch3 24s steps(1) infinite;
+}
+
+@keyframes anim-carousel-checked-radio-ch4 {
+  0%,
+  16.66% {
+    background: white;
+  }
+  16.66%,
+  33.32% {
+    background: white;
+  }
+  33.32%,
+  49.98% {
+    background: white;
+  }
+  49.98%,
+  66.64% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  66.64%,
+  100% {
+    background: white;
+  }
+}
+@keyframes anim-carousel-z-index-label-ch4 {
+  0%,
+  16.66% {
+    z-index: 0;
+  }
+  16.66%,
+  33.32% {
+    z-index: 0;
+  }
+  33.32%,
+  49.98% {
+    z-index: 0;
+  }
+  49.98%,
+  66.64% {
+    z-index: 1;
+  }
+  66.64%,
+  100% {
+    z-index: 0;
+  }
+}
+
+li:nth-child(4) input[type="radio"] + label::after {
+  animation: anim-carousel-checked-radio-ch4 24s steps(1) infinite;
+}
+li:nth-child(4) input[type="radio"] + label {
+  animation: anim-carousel-z-index-label-ch4 24s steps(1) infinite;
+}
+
+@keyframes anim-carousel-checked-radio-ch5 {
+  0%,
+  16.66% {
+    background: white;
+  }
+  16.66%,
+  33.32% {
+    background: white;
+  }
+  33.32%,
+  49.98% {
+    background: white;
+  }
+  49.98%,
+  66.64% {
+    background: white;
+  }
+  66.64%,
+  83.3% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  83.3%,
+  100% {
+    background: white;
+  }
+}
+@keyframes anim-carousel-z-index-label-ch5 {
+  0%,
+  16.66% {
+    z-index: 0;
+  }
+  16.66%,
+  33.32% {
+    z-index: 0;
+  }
+  33.32%,
+  49.98% {
+    z-index: 0;
+  }
+  49.98%,
+  66.64% {
+    z-index: 0;
+  }
+  66.64%,
+  83.3% {
+    z-index: 1;
+  }
+  83.3%,
+  100% {
+    z-index: 0;
+  }
+}
+
+li:nth-child(5) input[type="radio"] + label::after {
+  animation: anim-carousel-checked-radio-ch5 24s steps(1) infinite;
+}
+li:nth-child(5) input[type="radio"] + label {
+  animation: anim-carousel-z-index-label-ch5 24s steps(1) infinite;
+}
+
+@keyframes anim-carousel-checked-radio-ch6 {
+  0%,
+  16.66% {
+    background: white;
+  }
+  16.66%,
+  33.32% {
+    background: white;
+  }
+  33.32%,
+  49.98% {
+    background: white;
+  }
+  49.98%,
+  66.64% {
+    background: white;
+  }
+  66.64%,
+  83.3% {
+    background: white;
+  }
+  83.3%,
+  100% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes anim-carousel-z-index-label-ch6 {
+  0%,
+  16.66% {
+    z-index: 0;
+  }
+  16.66%,
+  33.32% {
+    z-index: 0;
+  }
+  33.32%,
+  49.98% {
+    z-index: 0;
+  }
+  49.98%,
+  66.64% {
+    z-index: 0;
+  }
+  66.64%,
+  83.3% {
+    z-index: 0;
+  }
+  83.3%,
+  100% {
+    z-index: 1;
+  }
+}
+
+li:nth-child(6) input[type="radio"] + label::after {
+  animation: anim-carousel-checked-radio-ch6 24s steps(1) infinite;
+}
+li:nth-child(6) input[type="radio"] + label {
+  animation: anim-carousel-z-index-label-ch6 24s steps(1) infinite;
 }
