@@ -273,17 +273,16 @@ nav {
 /****** section trouver *****/
 
 .trouver {
-  height: 870px;
   background-color: #ffee66;
 }
 
 .trouver__container {
   position: relative;
-  max-width: 960px;
-  /* height: 722px; */
+  max-width: 990px;
+  height: 876px;
   margin: auto;
-  padding: 35px 0 113px 0;
-  /* border: solid; */
+  padding: 35px 15px 113px 15px;
+  border: solid;
 }
 
 h1 {
@@ -353,7 +352,7 @@ h1 strong {
 .homepage-intro-illustration {
   position: absolute;
   top: 34px;
-  right: 0;
+  right: 15px;
   z-index: 0;
 }
 
@@ -796,4 +795,50 @@ li:nth-child(6) input[type="radio"] + label::after {
 }
 li:nth-child(6) input[type="radio"] + label {
   animation: anim-carousel-z-index-label-ch6 24s steps(1) infinite;
+}
+
+/************ fleche-categories ************/
+
+.fleche-categories {
+  position: absolute;
+  bottom: 37px;
+  right: 306px;
+  border: solid;
+}
+
+.fleche-categories svg {
+  margin: 0;
+}
+/************* icon-logo-104px ************/
+
+.icon-logo-104px {
+  position: relative;
+  top: 58px;
+}
+
+/*********** media queries section recherche **************/
+
+@media screen and (max-width: 992px) {
+  .trouver__container {
+    height: 783px;
+    width: 750px;
+  }
+  .fleche-categories {
+    right: 40px;
+    bottom: 30px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.2664;
+  }
+  .homepage-intro-illustration {
+    bottom: 47px;
+    right: 15px;
+  }
+}
+
+/************ categorie **************/
+
+.categories {
+  height: 457px;
 }
