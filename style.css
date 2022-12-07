@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style-type: none;
   text-decoration: none;
   font-weight: 600;
@@ -84,6 +84,7 @@ nav {
   border: none;
   outline: none;
   background-color: #f3f3f3;
+  font-weight: 500;
 }
 
 .nav__container__form__button {
@@ -282,7 +283,7 @@ nav {
   height: 876px;
   margin: auto;
   padding: 35px 15px 113px 15px;
-  border: solid;
+  /* border: solid; */
 }
 
 h1 {
@@ -313,10 +314,13 @@ h1 strong {
   border: none;
   background-color: #fff;
   color: black;
-  font-size: 18px;
-  font-weight: inherit;
   width: 100%;
   outline: none;
+}
+
+.trouver__container form input {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .trouver__container button {
@@ -325,7 +329,7 @@ h1 strong {
   color: #fff;
   cursor: pointer;
   font-weight: 600;
-  padding: 10px 20px 10px 20px;
+  padding: 9px 20px 11px 20px;
   font-size: 18px;
 }
 
@@ -377,8 +381,8 @@ h1 strong {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.4838;
-  /* overflow: hidden;
-  word-break: break-word; */
+  overflow: hidden;
+  word-break: break-word;
   color: inherit;
 }
 
@@ -402,6 +406,7 @@ h1 strong {
 
 .sA-name__nd {
   font-style: normal;
+  font-weight: 500;
 }
 
 .serviceAuthor .imgAuthor {
@@ -432,7 +437,7 @@ h1 strong {
   line-height: 1.2;
 }
 
-.mainBlock_service .btn {
+.btn {
   font-size: 13px;
   margin-top: 15px;
   padding-bottom: 10px;
@@ -443,18 +448,12 @@ h1 strong {
   text-align: center;
 }
 
-.carousel {
-  z-index: 1;
-}
-
 .label-mini-service {
   position: absolute;
-}
-.on-click {
-  display: block;
   width: 300px;
   height: 357px;
 }
+
 input[type="radio"] {
   display: none;
 }
@@ -803,7 +802,7 @@ li:nth-child(6) input[type="radio"] + label {
   position: absolute;
   bottom: 37px;
   right: 306px;
-  border: solid;
+  /* border: solid; */
 }
 
 .fleche-categories svg {
@@ -822,18 +821,143 @@ li:nth-child(6) input[type="radio"] + label {
   .trouver__container {
     height: 783px;
     width: 750px;
+    padding-top: 62px;
+    padding-bottom: 144px;
   }
   .fleche-categories {
     right: 40px;
-    bottom: 30px;
+    bottom: 25px;
   }
   h1 {
     font-size: 30px;
     line-height: 1.2664;
+    margin-bottom: 15px;
+    padding-top: 0;
+  }
+  .trouver__container form {
+    height: 42px;
+    max-width: 400px;
+    margin-top: 40px;
+  }
+  .trouver__container form input {
+    font-size: 16px;
+  }
+  .trouver__container__recommande h2 {
+    position: absolute;
+    left: -133px;
+    top: 125px;
+    transform: rotate(-90deg);
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 54px;
+    margin-block-end: 0.83em;
   }
   .homepage-intro-illustration {
     bottom: 47px;
     right: 15px;
+  }
+
+  /******* carousel ***********/
+
+  .trouver__container__recommande__carousel {
+    position: relative;
+    left: -52px;
+    width: 250px;
+    height: 299px;
+    margin-left: 117px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .label-mini-service {
+    width: 250px;
+    height: 299px;
+  }
+
+  .serviceIllu picture img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .serviceBottom {
+    padding: 10px;
+  }
+
+  .serviceTitle {
+    height: 43px;
+    /* border: solid 1px red; */
+  }
+
+  .serviceAuthor {
+    display: flex;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+
+  .sA-name {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .sA-name__nd {
+    font-style: normal;
+    font-weight: 500;
+  }
+  .serviceAuthor .imgAuthor {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+    margin-top: 2px;
+  }
+
+  .authorStartcomments .svgContainer {
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+  }
+  .starsvg {
+    height: 11px;
+    width: 11px;
+    margin-right: 3px;
+    line-height: 0.8;
+  }
+  .countComments {
+    line-height: 1.5;
+  }
+
+  .btn {
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  input[type="radio"] + .btn-radio-1::after {
+    left: 70px;
+  }
+  input[type="radio"] + .btn-radio-2::after {
+    left: 90px;
+  }
+  input[type="radio"] + .btn-radio-3::after {
+    left: 110px;
+  }
+  input[type="radio"] + .btn-radio-4::after {
+    left: 130px;
+  }
+  input[type="radio"] + .btn-radio-5::after {
+    left: 150px;
+  }
+  input[type="radio"] + .btn-radio-6::after {
+    left: 170px;
+  }
+  /************  ***********/
+
+  .icon-logo-104px {
+    top: 109px;
+    left: 25px;
+    aspect-ratio: 120/104;
+    height: 70px;
   }
 }
 
