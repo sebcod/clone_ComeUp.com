@@ -10,7 +10,7 @@
   font-family: "Montserrat", sans-serif;
   list-style-type: none;
   text-decoration: none;
-  font-weight: 600;
+  /* font-weight: 600; */
   user-select: none;
 }
 
@@ -269,6 +269,12 @@ nav {
   .nav__container__form__button__loupe {
     fill: black;
   }
+  .nav__container__menu:hover .nav__container__menu__list {
+    visibility: hidden;
+  }
+  .nav__container__menu:hover .nav__container__menu__list__containerFlecheTop {
+    visibility: hidden;
+  }
 }
 
 /****** section trouver *****/
@@ -354,6 +360,7 @@ h1 strong {
 /* img bg  */
 
 .homepage-intro-illustration {
+  aspect-ratio: auto 480 / 702;
   position: absolute;
   top: 34px;
   right: 15px;
@@ -820,7 +827,7 @@ li:nth-child(6) input[type="radio"] + label {
 @media screen and (max-width: 992px) {
   .trouver__container {
     height: 783px;
-    width: 750px;
+    max-width: 750px;
     padding-top: 62px;
     padding-bottom: 144px;
   }
@@ -961,8 +968,83 @@ li:nth-child(6) input[type="radio"] + label {
   }
 }
 
+@media screen and (max-width: 575px) {
+  .homepage-intro-illustration {
+    top: 50px;
+    right: 0px;
+    width: 151px;
+    height: auto;
+  }
+  .trouver__container form {
+    max-width: 400px;
+    margin: auto;
+  }
+  .trouver__container {
+    height: 770px;
+  }
+}
+
 /************ categorie **************/
 
 .categories {
+  background: white;
+}
+.categories__container {
+  width: 960px;
   height: 457px;
+  margin: auto;
+  padding: 50px 0;
+}
+.categories__container .titre {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.125;
+  margin-bottom: 64px;
+  text-align: center;
+}
+.logo_categories {
+  display: grid;
+  column-gap: 77px;
+  row-gap: 45px;
+  grid-template-columns: repeat(4, 182px);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.logo_categories li a img {
+  height: 48px;
+  width: 48px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.logo_categories li a {
+  height: 106px;
+  width: 182px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.091;
+  padding: 0 3px;
+  position: relative;
+}
+
+.logo_categories li a::before {
+  display: block;
+  border: 10px solid #ffed667e;
+  border-radius: 50%;
+  content: "";
+  height: 110px;
+  width: 110px;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.25s ease;
+  z-index: -1;
+}
+.logo_categories li a:hover:before {
+  z-index: 10;
+  opacity: 100;
 }
