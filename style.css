@@ -990,7 +990,7 @@ li:nth-child(6) input[type="radio"] + label {
   background: white;
 }
 .categories__container {
-  width: 960px;
+  max-width: 960px;
   height: 457px;
   margin: auto;
   padding: 50px 0;
@@ -1017,8 +1017,6 @@ li:nth-child(6) input[type="radio"] + label {
   justify-content: center;
 }
 .logo_categories li a {
-  height: 106px;
-  width: 182px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1031,7 +1029,7 @@ li:nth-child(6) input[type="radio"] + label {
 
 .logo_categories li a::before {
   display: block;
-  border: 10px solid #ffed667e;
+  border: 10px solid #ffed6677;
   border-radius: 50%;
   content: "";
   height: 110px;
@@ -1047,4 +1045,32 @@ li:nth-child(6) input[type="radio"] + label {
 .logo_categories li a:hover:before {
   z-index: 10;
   opacity: 100;
+}
+
+@media screen and (max-width: 992px) {
+  .categories__container {
+    max-width: 720px;
+  }
+  .categories__container .titre {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.727;
+    margin-bottom: 30px;
+  }
+  .logo_categories {
+    margin: auto;
+    row-gap: 24px;
+    column-gap: normal;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .logo_categories li a img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 12px;
+  }
+  .logo_categories li a {
+    font-size: 18px;
+    line-height: 1.222;
+  }
 }
