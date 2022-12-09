@@ -1074,3 +1074,54 @@ li:nth-child(6) input[type="radio"] + label {
     line-height: 1.222;
   }
 }
+
+/*********** Trouvez le prestataire ****************/
+
+.TrouvezLePrestataire {
+  background: #000;
+}
+.TrouvezLePrestataire__container {
+  max-width: 990px;
+  margin: auto;
+  padding: 68px 15px 52px;
+  position: relative;
+  border: solid red 1px;
+}
+.TrouvezLePrestataire__container__titre {
+  position: absolute;
+  font-style: 51px;
+  left: 190px;
+  top: 115px;
+  line-height: 1.28;
+  font-family: "Tiro Bangla", sans-serif;
+  color: #ffee66;
+  margin-bottom: 8px;
+}
+.TrouvezLePrestataire__container__button {
+  padding: 7px 30px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  left: 345px;
+  top: 280px;
+}
+.TrouvezLePrestataire__container__imgContainer {
+  position: absolute;
+  right: 7px;
+  top: 388px;
+  display: flex;
+  gap: 20px;
+}
+.TrouvezLePrestataire__container__olContainer {
+  background-color: #ffee66;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(50%);
+  font-size: 32px;
+  line-height: 1.313;
+  padding: 32px 40px;
+  text-align: right;
+  font-weight: 600;
+}
