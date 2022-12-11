@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Bangla:wght@400&display=swap");
 
 *,
 ::after {
@@ -819,7 +820,7 @@ li:nth-child(6) input[type="radio"] + label {
 
 .icon-logo-104px {
   position: relative;
-  top: 58px;
+  top: 64px;
 }
 
 /*********** media queries section recherche **************/
@@ -961,7 +962,7 @@ li:nth-child(6) input[type="radio"] + label {
   /************  ***********/
 
   .icon-logo-104px {
-    top: 109px;
+    top: 108px;
     left: 25px;
     aspect-ratio: 120/104;
     height: 70px;
@@ -982,6 +983,9 @@ li:nth-child(6) input[type="radio"] + label {
   .trouver__container {
     height: 770px;
   }
+  .icon-logo-104px {
+    top: 120px;
+  }
 }
 
 /************ categorie **************/
@@ -996,7 +1000,7 @@ li:nth-child(6) input[type="radio"] + label {
   padding: 50px 0;
 }
 .categories__container .titre {
-  font-size: 22px;
+  font-size: 21.3px;
   font-weight: 700;
   line-height: 1.125;
   margin-bottom: 64px;
@@ -1018,6 +1022,7 @@ li:nth-child(6) input[type="radio"] + label {
 }
 .logo_categories li a {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -1050,11 +1055,14 @@ li:nth-child(6) input[type="radio"] + label {
 @media screen and (max-width: 992px) {
   .categories__container {
     max-width: 720px;
+    height: auto;
+    padding-bottom: 40px;
   }
   .categories__container .titre {
-    font-size: 14px;
+    font-size: 14.7px;
     font-weight: 700;
     line-height: 1.727;
+    margin-top: 25px;
     margin-bottom: 30px;
   }
   .logo_categories {
@@ -1073,6 +1081,9 @@ li:nth-child(6) input[type="radio"] + label {
     font-size: 18px;
     line-height: 1.222;
   }
+  .logo_categories li a::before {
+    display: none;
+  }
 }
 
 /*********** Trouvez le prestataire ****************/
@@ -1083,32 +1094,33 @@ li:nth-child(6) input[type="radio"] + label {
 .TrouvezLePrestataire__container {
   max-width: 990px;
   margin: auto;
-  padding: 68px 15px 52px;
+  padding: 68px 15px 48px;
   position: relative;
-  border: solid red 1px;
+  /* border: solid red 1px; */
 }
 .TrouvezLePrestataire__container__titre {
   position: absolute;
-  font-style: 51px;
-  left: 190px;
+  font-size: 51px;
+  left: 205px;
   top: 115px;
   line-height: 1.28;
   font-family: "Tiro Bangla", sans-serif;
+  font-weight: 400;
   color: #ffee66;
   margin-bottom: 8px;
 }
 .TrouvezLePrestataire__container__button {
-  padding: 7px 30px;
+  padding: 9px 30px 11px 30px;
   background-color: #fff;
   font-size: 18px;
   font-weight: 600;
   position: absolute;
-  left: 345px;
+  left: 360px;
   top: 280px;
 }
 .TrouvezLePrestataire__container__imgContainer {
   position: absolute;
-  right: 7px;
+  right: 15px;
   top: 388px;
   display: flex;
   gap: 20px;
@@ -1117,11 +1129,88 @@ li:nth-child(6) input[type="radio"] + label {
   background-color: #ffee66;
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 15px;
   transform: translateY(50%);
   font-size: 32px;
   line-height: 1.313;
   padding: 32px 40px;
   text-align: right;
   font-weight: 600;
+}
+.text-underligne {
+  border-bottom: 4px solid black;
+}
+.TrouvezLePrestataire__container__arrow-block {
+  position: absolute;
+  bottom: 30px;
+  left: 219px;
+  display: flex;
+}
+.TrouvezLePrestataire__container__arrow-block svg {
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .TrouvezLePrestataire__container {
+    max-width: 750px;
+  }
+  .TrouvezLePrestataire__container__titre {
+    left: 15px;
+    top: 50px;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 42px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .TrouvezLePrestataire__container__button {
+    padding: 10px 10px 12px 10px;
+    font-size: 13px;
+    top: 320px;
+    left: 378px;
+  }
+  .TrouvezLePrestataire__container__imgContainer {
+    right: 40px;
+  }
+  .TrouvezLePrestataire__container__imgContainer img {
+    height: 80px;
+    width: 80px;
+  }
+  .TrouvezLePrestataire__container__olContainer {
+    font-size: 18px;
+    padding: 21px 18px 21px;
+    line-height: 1.2;
+  }
+  .text-underligne {
+    border-width: 2px;
+  }
+  .TrouvezLePrestataire__container__arrow-block {
+    bottom: 58px;
+    left: 100px;
+  }
+  .TrouvezLePrestataire__container__arrow-block svg {
+    height: 36px;
+    width: 36px;
+  }
+  @media screen and (max-width: 767px) {
+    .TrouvezLePrestataire__container {
+      width: auto;
+    }
+    .homepage-provider-illu {
+      position: relative;
+      top: -30px;
+      left: -15px;
+      width: 211px;
+    }
+    .TrouvezLePrestataire__container__button {
+      display: block;
+      position: relative;
+      top: -450px;
+      left: inherit;
+      width: 275px;
+      text-align: center;
+      margin: auto;
+      z-index: 1;
+    }
+  }
 }
