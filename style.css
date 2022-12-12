@@ -1212,5 +1212,19 @@ li:nth-child(6) input[type="radio"] + label {
       margin: auto;
       z-index: 1;
     }
+    .TrouvezLePrestataire__container__imgContainer {
+      flex-direction: column;
+      right: 40px;
+      top: 242px;
+    }
+    .TrouvezLePrestataire__container__arrow-block {
+      bottom: 98px;
+    }
+    .TrouvezLePrestataire__container__olContainer {
+      display: block;
+      left: 25px;
+      right: 25px;
+      bottom: 35px;
+    }
   }
 }
