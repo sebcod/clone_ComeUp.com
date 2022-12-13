@@ -1155,8 +1155,8 @@ li:nth-child(6) input[type="radio"] + label {
     max-width: 750px;
   }
   .TrouvezLePrestataire__container__titre {
-    left: 15px;
-    top: 50px;
+    left: 75px;
+    top: 100px;
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 42px;
@@ -1196,6 +1196,11 @@ li:nth-child(6) input[type="radio"] + label {
     .TrouvezLePrestataire__container {
       width: auto;
     }
+    .TrouvezLePrestataire__container__titre {
+      left: 15px;
+      top: 50px;
+    }
+
     .homepage-provider-illu {
       position: relative;
       top: -30px;
@@ -1227,4 +1232,13 @@ li:nth-child(6) input[type="radio"] + label {
       bottom: 35px;
     }
   }
+}
+
+/************ Nos sélections exclusives *******************/
+
+.e-control.e-slider .e-handle {
+  background-image: url("https://ej2.syncfusion.com/demos/src/slider/images/thumb.png");
+  background-color: transparent;
+  height: 25px;
+  width: 25px;
 }
