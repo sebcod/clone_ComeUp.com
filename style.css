@@ -1236,9 +1236,36 @@ li:nth-child(6) input[type="radio"] + label {
 
 /************ Nos sélections exclusives *******************/
 
-.e-control.e-slider .e-handle {
-  background-image: url("https://ej2.syncfusion.com/demos/src/slider/images/thumb.png");
-  background-color: transparent;
-  height: 25px;
-  width: 25px;
+.selections {
+  padding: 154px 0 67px;
+}
+.selections h2 {
+  max-width: 990px;
+  margin: auto;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 65px;
+  text-align: center;
+}
+.selections__carousel {
+  display: flex;
+  gap: 30px;
+}
+.selections__carousel a {
+  display: flex;
+  flex-direction: column;
+}
+.selections__carousel-reverse {
+  flex-direction: column-reverse !important;
+}
+.selections__carousel span {
+  font-size: 22px;
+  line-height: 1.091;
+  font-style: italic;
+  white-space: unset;
+  font-weight: 500;
+}
+.selections__carousel svg {
+  vertical-align: middle;
 }
