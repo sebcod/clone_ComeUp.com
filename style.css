@@ -1238,6 +1238,11 @@ li:nth-child(6) input[type="radio"] + label {
 
 .selections {
   padding: 154px 0 67px;
+  /* overflow: hidden; */
+}
+.selections__container {
+  width: 960px;
+  margin: auto;
 }
 .selections h2 {
   max-width: 990px;
@@ -1253,19 +1258,30 @@ li:nth-child(6) input[type="radio"] + label {
   gap: 30px;
 }
 .selections__carousel a {
+  height: 422px;
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 .selections__carousel-reverse {
   flex-direction: column-reverse !important;
 }
 .selections__carousel span {
-  font-size: 22px;
+  line-height: 1.091;
+  font-size: 20.4px;
   line-height: 1.091;
   font-style: italic;
   white-space: unset;
   font-weight: 500;
 }
+.whiteSpaceNoWrap {
+  white-space: nowrap;
+}
 .selections__carousel svg {
   vertical-align: middle;
+}
+.selections__carousel__slider {
+  width: fit-content;
+  margin: auto;
+  padding: 50px;
 }
