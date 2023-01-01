@@ -1739,7 +1739,10 @@
             </a>
           </div>
           <div class="selections__carousel__slider">
-            <input class="input_range" type="range" />
+            <input type="range" id="slider" />
+            <div id="selector">
+              <div class="selectBtn"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -2250,7 +2253,211 @@
             </div>
           </div>
         </div>
-        <div class="footerDown"></div>
+        <div class="footerBottom">
+          <div class="footerBottom__row">
+            <div class="footerBottom__social__container">
+              <div class="socials">
+                <a
+                  class="social"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/comeupdotcom"
+                  target="_blank"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <clipPath id="icon-facebook_svg__a">
+                        <path
+                          d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0Z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="icon-facebook_svg__b">
+                        <path
+                          d="m7.225 0 2.398.004c.208 0 .377.164.377.367v2.748a.372.372 0 0 1-.377.367H8.007c-1.114 0-1.317.423-1.317 1.255v1.731h2.82c.1 0 .197.039.267.108s.11.162.11.26v2.959a.372.372 0 0 1-.378.367H6.69v7.467a.372.372 0 0 1-.377.367H3.166a.372.372 0 0 1-.377-.367v-7.467H.377A.372.372 0 0 1 0 9.799v-2.96c0-.202.169-.367.377-.367H2.79V4.43C2.789 1.739 4.53 0 7.225 0Z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#icon-facebook_svg__a)">
+                      <path d="M0 0h32v32H0V0z"></path>
+                    </g>
+                    <g
+                      clip-path="url(#icon-facebook_svg__b)"
+                      transform="translate(11 7)"
+                    >
+                      <path fill="#F3F3F3" d="M0 0h10v18H0V0z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  class="social"
+                  rel="noopener noreferrer"
+                  href="https://www.youtube.com/@bycomeup"
+                  target="_blank"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <clipPath id="icon-youtube_svg__a">
+                        <path
+                          d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0Z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="icon-youtube_svg__b">
+                        <path
+                          d="M10.248 0c.604.003 2.222.017 3.84.08l.51.022c1.353.062 2.631.163 3.227.326.857.23 1.532.906 1.763 1.763.386 1.408.41 4.19.412 4.733v.103l-.001.15c-.006.675-.054 3.293-.41 4.649a2.506 2.506 0 0 1-1.764 1.762c-1.378.363-6.401.406-7.577.411L10.01 14h-.257c-.603-.003-2.217-.017-3.834-.08l-.51-.022c-1.353-.062-2.632-.163-3.234-.326a2.506 2.506 0 0 1-1.763-1.763C.055 10.468.007 7.84 0 7.162V6.84c.006-.674.054-3.292.41-4.648A2.557 2.557 0 0 1 2.176.41C3.553.05 8.576.007 9.752.002Z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="icon-youtube_svg__c">
+                        <path d="m0 0 5.206 2.998L0 5.995V0Z"></path>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#icon-youtube_svg__a)">
+                      <path d="M0 0h32v32H0V0z"></path>
+                    </g>
+                    <g
+                      clip-path="url(#icon-youtube_svg__b)"
+                      transform="translate(6 9)"
+                    >
+                      <path fill="#F3F3F3" d="M0 0h20v14H0V0z"></path>
+                    </g>
+                    <g
+                      clip-path="url(#icon-youtube_svg__c)"
+                      transform="translate(14.007 13.002)"
+                    >
+                      <path d="M0 0h5.206v5.995H0V0z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  class="social"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/company/27099046"
+                  target="_blank"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <clipPath id="icon-linkedin_svg__a">
+                        <path
+                          d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0Z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="icon-linkedin_svg__b">
+                        <path
+                          d="M4.087 5.53V17H.229V5.53h3.858ZM2.184 0c1.32 0 2.132.856 2.157 1.981 0 1.102-.837 1.983-2.183 1.983h-.025C.839 3.964 0 3.082 0 1.981 0 .856.864 0 2.184 0Zm7.896 7.155c.512-.78 1.428-1.895 3.477-1.895C16.097 5.26 18 6.9 18 10.423V17h-3.858v-6.137c0-1.541-.558-2.594-1.954-2.594-1.066 0-1.7.71-1.98 1.395-.102.246-.128.587-.128.93V17H6.22l.001-.042v-.05l.001-.16c.004-.878.018-3.898.021-6.596V8.161a98.781 98.781 0 0 0-.022-2.632h3.859v1.626Z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#icon-linkedin_svg__a)">
+                      <path d="M0 0h32v32H0V0z"></path>
+                    </g>
+                    <g
+                      clip-path="url(#icon-linkedin_svg__b)"
+                      transform="translate(7 7)"
+                    >
+                      <path fill="#F3F3F3" d="M0 0h18v17H0V0z"></path>
+                    </g>
+                  </svg>
+                </a>
+                <a
+                  class="social"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/bycomeup"
+                  target="_blank"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <clipPath id="icon-twitter_svg__a">
+                        <path
+                          d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0Z"
+                        ></path>
+                      </clipPath>
+                      <clipPath id="icon-twitter_svg__b">
+                        <path
+                          d="M12.462 0c1.062 0 2.022.46 2.696 1.196a7.286 7.286 0 0 0 2.345-.92 3.783 3.783 0 0 1-1.624 2.096A7.242 7.242 0 0 0 18 1.776a7.614 7.614 0 0 1-1.843 1.96c.007.162.01.326.01.49C16.168 9.23 12.455 15 5.662 15 3.575 15 1.634 14.373 0 13.299a7.294 7.294 0 0 0 5.467-1.568c-1.616-.031-2.98-1.126-3.45-2.63a3.6 3.6 0 0 0 1.668-.065C1.995 8.688.723 7.158.723 5.323v-.048a3.609 3.609 0 0 0 1.673.474A3.811 3.811 0 0 1 .753 2.597c0-.694.182-1.345.5-1.904C3.074 2.984 5.796 4.492 8.865 4.65a3.894 3.894 0 0 1-.096-.863C8.77 1.695 10.423 0 12.462 0Z"
+                        ></path>
+                      </clipPath>
+                    </defs>
+                    <g clip-path="url(#icon-twitter_svg__a)">
+                      <path d="M0 0h32v32H0V0z"></path>
+                    </g>
+                    <g
+                      clip-path="url(#icon-twitter_svg__b)"
+                      transform="translate(7 9)"
+                    >
+                      <path fill="#F3F3F3" d="M0 0h18v15H0V0z"></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="copyright">
+                © 2023 - <span class="text-uppercase">5euros SAS</span> -
+                <a class="borderBottomColorGrey215" href="#"
+                  >Conditions générales</a
+                >
+              </div>
+            </div>
+            <div class="paimentsContainer">
+              <div class="paymentsWrapper">
+                <div class="payments">
+                  <img
+                    height="30"
+                    width="48"
+                    loading="lazy"
+                    src="./img/footer/icon-visa.svg"
+                    alt=""
+                  />
+                  <img
+                    height="30"
+                    width="48"
+                    loading="lazy"
+                    src="./img/footer/icon-mastercard.svg"
+                    alt=""
+                  />
+                  <img
+                    height="30"
+                    width="48"
+                    loading="lazy"
+                    src="./img/footer/icon-maestro.svg"
+                    alt=""
+                  />
+                  <img
+                    height="30"
+                    width="48"
+                    loading="lazy"
+                    src="./img/footer/icon-paypal.svg"
+                    alt=""
+                  />
+                </div>
+                <p>Paiements sécurisés par PayPal et Braintree.</p>
+              </div>
+            </div>
+            <div class="footerBottom__icon-logo__container">
+              <img
+                width="55"
+                height="48"
+                src="./img/img-menu/icon-logo-mini.svg"
+                alt="icon-logo-104px"
+                aria-hidden="true"
+                focusable="false"
+                class="footerBottom__icon-logo"
+              />
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
   </body>
